@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding website</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1 class="title">Coding questions</h1>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-element"><a href="/">Home</a></li>
+            <li class="nav-element"><a href="">About</a></li>
+            <li class="nav-element"><a href="">Feedback</a></li>
+            <li class="nav-element"><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Table -->
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Question Name</th>
+                    <th>Difficulty</th>
+                    <th>Algorithm</th>
+                    <th>Description</th>
+                    <th>Code</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i=0;i<db.length;i++){ %>
+                <tr class="row">
+                    
+                    <td class="cell">
+                        <%= db[i].name %>
+                    </td>
+                    <td class="cell">
+                        <%= db[i].difficulty %>
+                    </td>
+                    <td class="cell">
+                        <%= db[i].algorithm %>
+                    </td>
+                    <td class="cell"><a href="description/<%=db[i]._id%>">Link</a></td>
+                    <td class="cell"><a href="code/<%=db[i]._id%>">Code</a></td>
+                    <td class="cell">
+                        <form id="my_form" method="post" action="delete/<%=db[i]._id%>">
+                            <!-- <input type="submit" value="delete"> -->
+                            <a class="delete-button" href="javascript:{}" onclick="document.getElementById('my_form').submit();"><i class="fas fa-trash-alt"></i></a>
+
+                        </form>
+                    </td>
+                </tr>
+                <%  } %>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6"><a href="/form1">+</a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script type="text/javascript" src="/home.js"></script>
+</body>
+
+</html>

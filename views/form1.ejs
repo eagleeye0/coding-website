@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding website</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1 class="title">Coding questions</h1>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-element"><a href="/">Home</a></li>
+            <li class="nav-element"><a href="">About</a></li>
+            <li class="nav-element"><a href="">Feedback</a></li>
+            <li class="nav-element"><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Description -->
+    <div class="container">
+        <form method="POST" action="form1">
+            <br>
+            <label for="question-name">Question Name</label>
+            <br>
+            <input class="input" type="text" name="name" required placeholder="e.g. sort"/>
+            <br>
+            <label for="difficulty">Difficulty</label>
+            <br>
+            <input class="input" type="number" name="difficulty" required placeholder="1-7"/>
+            <br>
+            <label for="algorithm">Algorithm</label>
+            <br>
+            <input class="input" type="text" name="algorithm" required placeholder="e.g. bubble sort"/>
+            <br>
+            <label for="description">Description</label>
+            <br>
+            <textarea id="textbox" class="input textarea" class="description" required name="description" rows="10" placeholder="description of algorithm"></textarea>
+            <!-- <input class="input" type="button" name="next" value="Next"/> -->
+            <button type="submit">Next</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

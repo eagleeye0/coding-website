@@ -1,0 +1,148 @@
+html {
+	height: 100%;
+}
+
+body{
+	margin:0;
+	background-color: #444;
+	height:100%;
+	font-family: "roboto";
+}
+
+/* Header */
+
+.header {
+	padding: 2% 7%;
+	background-color: #222;
+	color: #fff;
+}
+
+.title{
+	font-size: 4rem;
+	margin: 0;
+	font-family: "poppins";
+}
+
+/* Navbar */
+
+.navbar {
+	background-color:#888;
+	color: #fff;
+	padding: 0.5% 1%;
+}
+
+.nav-list {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.nav-element {
+	display: inline;
+	margin: 20px;
+	font-size: 1.5rem;
+}
+
+/* Table */
+
+.container {
+	padding: 2% 5%;
+	color: white;
+}
+
+.table {
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: left;
+	border: 0px;
+	border-spacing: 0px;
+}
+
+.cell {
+	padding: 10px;
+}
+
+thead {
+	color: #afa;
+}
+
+tbody {
+	background-color: #888;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+tfoot tr td{
+	border-top: 4px solid #444;
+	background-color: #aaa;
+	text-align:center;
+	font-size: 2rem;
+}
+
+/* Description */
+
+.heading {
+	color: white;
+	font-size: 2.5rem;
+}
+
+p {
+	color: white;
+	font-size: 1.5rem;
+}
+
+/* Code */
+
+.code p{
+	border-radius: 10px;
+	background-color: #111;
+	color: #afa;
+	padding: 30px;
+	font-family: "space mono";
+	font-size: 1.2rem;
+}
+
+button {
+	height: 80px;
+	width: 20%;
+	margin-bottom: 50px;
+	font-size: 2rem;
+	border: 1px #fff solid;
+	background: #222;
+	border-radius: 20px;
+	color: white;
+}
+
+/* Form */
+
+form {
+	font-size: 2rem;
+}
+
+.input {
+	margin: 20px 0;
+	font-size: 2rem;
+	background-color: #222;
+	color: #fff;
+}
+
+.textarea {
+	min-height: 5em;
+	width: 100%;
+	color: #afa;
+}
+
+.code-button {
+	float: right;
+}
+
+.edit-button {
+	/*float: right;*/
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	/*text-align: center;*/
+}
