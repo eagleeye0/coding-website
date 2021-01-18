@@ -55,13 +55,6 @@
                     </td>
                     <td class="cell"><a href="description/<%=db[i]._id%>">Link</a></td>
                     <td class="cell"><a href="code/<%=db[i]._id%>">Code</a></td>
-                    <td class="cell">
-                        <form id="my_form" method="post" action="delete/<%=db[i]._id%>">
-                            <!-- <input type="submit" value="delete"> -->
-                            <a class="delete-button" href="javascript:{}" onclick="document.getElementById('my_form').submit();"><i class="fas fa-trash-alt"></i></a>
-
-                        </form>
-                    </td>
                 </tr>
                 <%  } %>
             </tbody>
